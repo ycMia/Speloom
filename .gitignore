@@ -7,3 +7,6 @@
 .*.swo
 
 *.sh
+
+*.vim
+.vimrc
