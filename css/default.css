@@ -10,29 +10,38 @@ body {
 	color: black;
 }
 
-.pannel {
+.panel {
     background:grey;
+    border: solid 5px;
+    border-color:black;
+    border-radius: 2em;
 }
 
-.pannel, .box-shadow{
+.box-shadow{
     box-shadow: 2px 2px 20px 23px #cfbf00;
 }
-.pannel .pannel-title-container{
+
+.panel .panel-title-container{
     margin: 0px 0px 0.5em 0px;
     padding: 5px 8px 0.5em 8px;
     border-bottom: solid 1px;
 }
 
-.pannel-title-container .pannel-title{
+.panel .panel-title-container-clear{
+    margin: 0px 0px 0.5em 0px;
+    padding: 5px 8px 0.5em 8px;
+}
+
+.panel-title{
     font-size:1.5em;
     font-weight:bold;
 }
 
-.pannel .pannel-content-container{
+.panel .panel-content-container{
     padding: 0px 0px 1em 10px;
 }
 
-.pannel-content-container .pannel-content{
+.panel-content-container .panel-content{
     font-size:1.2em;
     color-:#000000;
     padding-right:8px;
@@ -41,15 +50,22 @@ body {
     border-color:gray;
 }
 
-.pannel-content:hover{
+.panel-content:hover{
     border-color:black;
 }
 
-.left-pannel {
+.left-panel {
     width:20em;
     height:40em;
+    margin-top: 0.5em;
     margin-left: 2em;
-    border-radius: 2em;
-    border: solid 5px;
-    border-color: black;
+    z-index:1;
+    position:relative;
+}
+
+.top-panel {
+    margin-left: 2em;
+    margin-right: 2em;
+    z-index:5;
+    position:relative;
 }
