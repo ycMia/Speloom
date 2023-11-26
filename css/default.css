@@ -55,7 +55,7 @@ body {
 }
 
 .left-panel {
-    width:20em;
+    width:13em;
     height:40em;
     margin-top: 0.5em;
     margin-left: 2em;
@@ -68,4 +68,45 @@ body {
     margin-right: 2em;
     z-index:5;
     position:relative;
+}
+
+.inspire-ball {
+    height:50px;
+    width:50px;
+    border-radius:50px;
+
+    background-color:blue;
+    position: relative;
+    margin-left: 170px
+    margin-bottom: 0.5em;
+}
+
+.inspire-ball-ani-1 {
+    animation-name: inspire-ball-animation-1;
+    animation-delay: 0;
+    animation-duration: 2.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+.inspire-ball-ani-2 {
+    animation-name: inspire-ball-animation-2;
+    animation-delay: 0;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+}
+
+@keyframes inspire-ball-animation-1 {
+    0% { left: 0; background-color: blue }
+    50% { left:200px; background-color: #0096a1 }
+    100% { left: 400px; background-color: orange }
+}
+
+@keyframes inspire-ball-animation-2 {
+    0% { left: 400px; background-color: orange }
+    50% { left:200px; background-color: #0096a1 }
+    100% { left: 0; background-color: blue }
 }
