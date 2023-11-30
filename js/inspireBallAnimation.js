@@ -12,5 +12,6 @@ window.onload = function () {
             insBallHandler.classList.remove("inspire-ball-ani-2");
             insBallHandler.classList.add("inspire-ball-ani-1");
         }
-    }
+    } 
+    panelPreload()
 }
